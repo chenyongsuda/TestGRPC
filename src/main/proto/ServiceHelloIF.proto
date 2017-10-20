@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "ServiceBaseInfo.proto";
+
+option java_multiple_files = false;
+option java_package = "com.proto.service";
+option java_outer_classname = "ServiceHelloIF";
+
+service Greeter{
+    rpc SayHello(HelloRequest) returns (HelloReply) {}
+}
